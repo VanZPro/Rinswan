@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 For You, Rin 💕</title>
+    <meta name="description" content="A special message for someone special - Rin">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Stars / Sparkles -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- Landing / Intro Screen -->
+    <section class="screen active" id="screen-intro">
+        <div class="intro-content">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="letter-icon">💌</div>
+                </div>
+            </div>
+            <h2 class="intro-subtitle fade-in-up">Hai, Rin...</h2>
+            <p class="intro-text fade-in-up delay-1">Ada yang mau aku omongin sama kamu...</p>
+            <button class="btn-romantic fade-in-up delay-2" id="btnOpen">
+                <span>Buka Suratnya</span>
+                <div class="btn-sparkle"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Screen 2: The Journey -->
+    <section class="screen" id="screen-story">
+        <div class="story-content">
+            <div class="story-header">
+                <h1 class="script-title">Dear Rin,</h1>
+                <div class="title-decoration">
+                    <span class="deco-line"></span>
+                    <span class="deco-heart">♥</span>
+                    <span class="deco-line"></span>
+                </div>
+            </div>
+
+            <div class="story-cards">
+                <div class="story-card" data-delay="0">
+                    <div class="card-icon">🌸</div>
+                    <p>Sebenarnya dari beberapa waktu ngobrol sama kamu, aku mulai ngerasa nyaman. Awalnya cuma pengen
+                        kenal aja...</p>
+                </div>
+                <div class="story-card" data-delay="1">
+                    <div class="card-icon">✨</div>
+                    <p>Tapi lama-lama aku jadi suka cara kamu ngobrol, cara kamu berpikir, dan gimana kamu jadi diri
+                        kamu sendiri.</p>
+                </div>
+                <div class="story-card" data-delay="2">
+                    <div class="card-icon">🌙</div>
+                    <p>Aku tau kita sekarang jauh, aku di Bandung kamu di Lampung. Tapi menurutku jarak bukan masalah
+                        kalau dua orang sama-sama mau jalanin dan saling jaga.</p>
+                </div>
+                <div class="story-card" data-delay="3">
+                    <div class="card-icon">💫</div>
+                    <p>Jadi aku mau jujur aja sama kamu. Aku pengen lebih dari sekadar teman sama kamu.</p>
+                </div>
+            </div>
+
+            <button class="btn-romantic btn-next" id="btnNext">
+                <span>Lanjutkan...</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Screen 3: The Confession -->
+    <section class="screen" id="screen-confession">
+        <div class="confession-content">
+            <div class="rose-petals" id="rosePetals"></div>
+
+            <div class="confession-box">
+                <div class="confession-glow"></div>
+                <h1 class="confession-title">Rin</h1>
+                <div class="heartbeat-icon">💖</div>
+                <p class="confession-text">
+                    Aku udah nyaman sama kamu, dan aku ga mau kehilangan rasa ini...
+                </p>
+                <p class="confession-main">
+                    Kamu <span class="highlight-word">mau nggak</span> coba
+                    <span class="highlight-word">jalanin ini</span> sama aku?
+                </p>
+
+                <div class="answer-buttons">
+                    <button class="btn-answer btn-yes" id="btnYes">
+                        <span class="btn-emoji">💕</span>
+                        <span>Iya, Mau!</span>
+                    </button>
+                    <button class="btn-answer btn-no" id="btnNo">
+                        <span class="btn-emoji">🤔</span>
+                        <span>Hmm...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 4: Yes Response -->
+    <section class="screen" id="screen-yes">
+        <div class="yes-content">
+            <div class="fireworks-container" id="fireworksContainer"></div>
+            <div class="celebration-text">
+                <h1 class="mega-title">YEAY! 🎉</h1>
+                <p class="yes-subtitle">Terima kasih, Rin!</p>
+                <div class="heart-burst" id="heartBurst"></div>
+                <p class="yes-message">
+                    Makasih udah mau percaya sama aku, Rin. <br>
+                    Aku janji bakal jaga ini baik-baik, <br>
+                    walaupun jauh, aku bakal selalu ada buat kamu. 💕
+                </p>
+                <div class="couple-hearts">
+                    <span class="heart-left">♥</span>
+                    <span class="heart-ampersand">&</span>
+                    <span class="heart-right">♥</span>
+                </div>
+                <p class="date-text" id="dateText"></p>
+                <div class="infinite-love">∞ Love Forever ∞</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle" title="Toggle Music">
+        🎵
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source src="https://github.com/VanZPro/Rinswan/blob/main/Stephen%20Sanchez%20-%20Until%20I%20Found%20You%20(Official%20Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
